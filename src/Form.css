@@ -1,0 +1,13 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	background: white;
+	box-shadow: 5px 5px 10px black;
+	padding: 25px;
+	justify-content: center;
+	position: absolute;
+	margin: auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

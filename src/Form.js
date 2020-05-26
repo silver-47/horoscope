@@ -1,8 +1,11 @@
 import React from 'react';
+import './Form.css'
 
 const Form = () =>{
 	return (
-		<h1>maaaaaa</h1>
+		<div class='container'>
+			<h1>Get your Horoscope</h1>
+		</div>
 	);
 }
 
