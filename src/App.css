@@ -1,12 +1,10 @@
-.App {
-  text-align: center;
-}
-
 .Header
 {
 	font-family: 'Fruktur', cursive;
 	font-size: 04.07rem;
 	color: silver;
+	text-align: center;
 	text-shadow: 4.7px 4.7px 4.7px black;
 	padding: 10px;
+	margin-bottom: 47px;
 }
