@@ -3,9 +3,9 @@ import './Form.css'
 
 const Form = ({ name, sign, submit }) =>{
 	return (
-		<div className='container'>
-			<div className='inside'>
-				<h2>Get your Horoscope</h2>
+		<div>
+			<h1>Get your Horoscope</h1>
+			<div className='inputs'>
 				<input	name='Name' type="text"
 						placeholder='Enter Your Name here...'
 						autoFocus
@@ -24,8 +24,8 @@ const Form = ({ name, sign, submit }) =>{
 						<option value="Aquarius">Aquarius</option>
 						<option value="Pisces">Pisces</option>
 				</select>
-				<input type="submit" value="Get" onClick={submit}/>
 			</div>
+			<input type="submit" value="Get" onClick={submit}/>
 		</div>
 	);
 }

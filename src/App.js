@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from './components/Form'
+import Aztro from './components/Aztro'
 import './App.css';
 
 class App extends React.Component {
@@ -8,7 +9,8 @@ class App extends React.Component {
     super();
     this.state = {
       Name: '',
-      Sign: 'Aries'
+      Sign: 'Aries',
+      Route: 'Form'
     }
   }
 
@@ -21,18 +23,26 @@ class App extends React.Component {
   }
 
   getHoroscope = () => {
-    const { Name, Sign } = this.state;
-    if (Name) {
-      console.log(Name);
-      console.log(Sign);
+    if (this.state.Name) {
+      this.setState({Route: 'Aztro'});
     }
+  }
+
+  getHome = () => {
+    this.setState({Route: 'Form', Name: '', Sign: 'Aries'});
   }
 
   render() {
     return (
       <div className="App">
-        <div className="Header">Horoscope</div>
-        <Form name={this.nameGet} sign={this.signGet} submit={this.getHoroscope} />
+        <div className='header'>Horoscope</div>
+        <div className='container'>
+          {this.state.Route === 'Form'
+          ? <Form name={this.nameGet} sign={this.signGet} submit={this.getHoroscope} />
+          : <Aztro name={this.state.Name} sign={this.state.Sign} submit={this.getHome}/>
+          }
+        </div>
+        <div className='footer'>© Silver</div>
       </div>
     )
   }

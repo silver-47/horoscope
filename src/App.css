@@ -1,10 +1,39 @@
-.Header
+.App {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.header
 {
 	font-family: 'Fruktur', cursive;
-	font-size: 04.07rem;
+	font-size: 4rem;
 	color: silver;
 	text-align: center;
-	text-shadow: 4.7px 4.7px 4.7px black;
-	padding: 10px;
-	margin-bottom: 47px;
+	text-shadow: 5px 5px 5px black;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container {
+	font-family: 'Nunito', sans-serif;
+	width: 250px;
+	background-color: rgba(255,255,255,0.35);
+	border-radius: 1em;
+  	border: 2.5px solid black;
+	box-shadow: 5px 5px 10px black;
+	padding: 25px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footer {
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	color: silver;
+	text-shadow: 0px 0px 5px black; 
 }
