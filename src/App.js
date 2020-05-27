@@ -12,11 +12,15 @@ class App extends React.Component {
     }
   }
 
+  getHoroscope = (event) => {
+    console.log(event.target.value);
+  }
+
   render() {
     return (
       <div className="App">
         <div className="Header">Horoscope</div>
-        <Form />
+        <Form submit={this.getHoroscope}/>
       </div>
     );
   }

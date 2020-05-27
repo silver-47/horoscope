@@ -1,14 +1,14 @@
 import React from 'react';
 import './Form.css'
 
-const Form = () =>{
+const Form = ({ submit }) =>{
 	return (
-		<div class='container'>
-			<div class='inside'>
+		<div className='container'>
+			<form className='inside'>
 				<h2>Get your Horoscope</h2>
 				<input	name='Name' type="text"
 						placeholder='Enter your Name here...'
-						required autofocus/>
+						required autoFocus/>
 				<select name="Sign">
 						<option value="Aries">Aries</option>
 						<option value="Taurus">Taurus</option>
@@ -23,8 +23,8 @@ const Form = () =>{
 						<option value="Aquarius">Aquarius</option>
 						<option value="Pisces">Pisces</option>
 				</select>
-				<input type="submit" value="Submit" />
-			</div>
+				<input type="submit" value="Submit" onSubmit={submit}/>
+			</form>
 		</div>
 	);
 }

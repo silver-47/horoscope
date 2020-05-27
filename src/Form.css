@@ -4,7 +4,7 @@
 
 .container {
 	min-width: 247px;
-	background-color: white;
+	background-color: rgba(255,255,255,0.47);
 	border-radius: 1em;
   	border: 2.5px solid black;
 	box-shadow: 5px 5px 10px black;
@@ -35,7 +35,11 @@ input, select {
 }
 
 input[type='submit'] {
-	background-color: rgba(192,192,192, .47);
+	background-color: rgba(192,192,192,0.47);
 	border: 2.5px solid black;
 	border-radius: 47px;
+}
+
+input[type='submit']:hover {
+	background-color: rgba(47,47,47,0.47);
 }
