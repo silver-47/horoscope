@@ -1,0 +1,17 @@
+.aztro {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+h2 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: justify;
+	font-size: 15px;
+}
