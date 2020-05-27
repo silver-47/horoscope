@@ -7,7 +7,7 @@ const Form = ({ name, sign, submit }) =>{
 			<div className='inside'>
 				<h2>Get your Horoscope</h2>
 				<input	name='Name' type="text"
-						placeholder='Enter your Name here...'
+						placeholder='Enter Your Name here...'
 						autoFocus
 						onChange={name}/>
 				<select name="Sign" onChange={sign}>
@@ -24,7 +24,7 @@ const Form = ({ name, sign, submit }) =>{
 						<option value="Aquarius">Aquarius</option>
 						<option value="Pisces">Pisces</option>
 				</select>
-				<input type="submit" value="Submit" onClick={submit}/>
+				<input type="submit" value="Get" onClick={submit}/>
 			</div>
 		</div>
 	);

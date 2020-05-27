@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './Form'
+import Form from './components/Form'
 import './App.css';
 
 class App extends React.Component {
@@ -7,22 +7,34 @@ class App extends React.Component {
   {
     super();
     this.state = {
-      'Name': '',
-      'Sign': ''
+      Name: '',
+      Sign: 'Aries'
     }
   }
 
-  getHoroscope = (event) => {
-    console.log(event.target.value);
+  nameGet = (event) => {
+    this.setState({Name: event.target.value});
+  }
+
+  signGet = (event) => {
+    this.setState({Sign: event.target.value});
+  }
+
+  getHoroscope = () => {
+    const { Name, Sign } = this.state;
+    if (Name) {
+      console.log(Name);
+      console.log(Sign);
+    }
   }
 
   render() {
     return (
       <div className="App">
         <div className="Header">Horoscope</div>
-        <Form submit={this.getHoroscope}/>
+        <Form name={this.nameGet} sign={this.signGet} submit={this.getHoroscope} />
       </div>
-    );
+    )
   }
 }
 
